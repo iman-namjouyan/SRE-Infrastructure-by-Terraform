@@ -1,0 +1,24 @@
+image:
+  registry: 192.168.1.10:8083
+  repository: bitnami/minio
+  tag: 2023.11.11-debian-11-r0
+clientImage:
+  registry: 192.168.1.10:8083
+  repository: bitnami/minio
+  tag: 2023.11.6-debian-11-r1
+
+persistence:
+  storageClass: "longhorn"
+
+global:
+  storageClass: "longhorn"
+
+ingress:
+  enabled: true
+  ingressClassName: "nginx"
+  hostname: minio.local
+  path: /
+  pathType: ImplementationSpecific
+  servicePort: minio-console
+  tls: false
+  selfSigned: false

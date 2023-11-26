@@ -1,0 +1,54 @@
+#-------------------------------------[Set custom images]
+defaultSettings:
+  defaultReplicaCount: "3"
+  replicaSoftAntiAffinity: "true"
+  
+persistence:
+  defaultClassReplicaCount: "3"
+
+image:
+  longhorn:
+    engine:
+      repository: 192.168.1.10:8083/longhornio/longhorn-engine
+      tag: v1.5.1
+    manager:
+      repository: 192.168.1.10:8083/longhornio/longhorn-manager
+      tag: v1.5.1
+    ui:
+      repository: 192.168.1.10:8083/longhornio/longhorn-ui
+      tag: v1.5.1
+    instanceManager:
+      repository: 192.168.1.10:8083/longhornio/longhorn-instance-manager
+      tag: v1.5.1
+    shareManager:
+      repository: 192.168.1.10:8083/longhornio/longhorn-share-manager
+      tag: v1.5.1
+    backingImageManager:
+      repository: 192.168.1.10:8083/longhornio/backing-image-manager
+      tag: v1.5.1
+    supportBundleKit:
+      repository: 192.168.1.10:8083/longhornio/support-bundle-kit
+      tag: v0.0.25
+  csi:
+    attacher:
+      repository: 192.168.1.10:8083/longhornio/csi-attacher
+      tag: v4.2.0
+    provisioner:
+      repository: 192.168.1.10:8083/longhornio/csi-provisioner
+      tag: v3.4.1
+    nodeDriverRegistrar:
+      repository: 192.168.1.10:8083/longhornio/csi-node-driver-registrar
+      tag: v2.5.0
+    resizer:
+      repository: 192.168.1.10:8083/longhornio/csi-resizer
+      tag: v1.7.0
+    snapshotter:
+      repository: 192.168.1.10:8083/longhornio/csi-snapshotter
+      tag: v6.2.1
+    livenessProbe:
+      repository: 192.168.1.10:8083/longhornio/livenessprobe
+      tag: v2.9.0
+  pullPolicy: IfNotPresent
+
+defaultSettings:
+  defaultDataPath: /longhorn

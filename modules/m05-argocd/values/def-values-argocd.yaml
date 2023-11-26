@@ -1,0 +1,12 @@
+global:
+  image:
+    repository: "192.168.1.10:8083/argoproj/argocd"
+    tag: v2.8.4
+dex:
+  image:
+    repository: "192.168.1.10:8083/argocd/argocd-2.7.8/dex"
+    tag: v2.37.0
+redis:
+  image:
+    repository: "192.168.1.10:8083/docker/library/redis"
+    tag: 7.0.13-alpine

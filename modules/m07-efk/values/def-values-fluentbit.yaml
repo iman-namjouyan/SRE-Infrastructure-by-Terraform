@@ -1,0 +1,27 @@
+---
+image:
+  repository: 192.168.1.10:8083/fluent/fluent-bit
+  tag: latest
+config:
+  outputs: |
+    [OUTPUT]
+        Name es
+        Match kube.*
+        Host elasticsearch-master
+        Replace_Dots On
+        Logstash_Format On
+        Logstash_Prefix fluent-bit
+        Retry_Limit False
+        http_User elastic
+        http_Passwd elastic
+
+    [OUTPUT]
+        Name es
+        Match host.*
+        Host elasticsearch-master
+        Replace_Dots On
+        Logstash_Format On
+        Logstash_Prefix node
+        Retry_Limit False
+        http_User elastic
+        http_Passwd elastic

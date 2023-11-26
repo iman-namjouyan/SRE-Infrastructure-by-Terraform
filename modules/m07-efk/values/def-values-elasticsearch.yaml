@@ -1,0 +1,17 @@
+---
+volumeClaimTemplate:
+  resources:
+    requests:
+      storage: 10Gi
+image: 192.168.1.10:8083/elasticsearch/elasticsearch
+imageTag: "7.17.13"
+esConfig:
+  elasticsearch.yml: |
+    ingest.geoip.downloader.enabled: false
+
+extraEnvs:
+  - name: ELASTIC_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: elastic-credentials
+        key: password

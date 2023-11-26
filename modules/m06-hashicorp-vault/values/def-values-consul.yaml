@@ -1,0 +1,19 @@
+global:
+  image: 192.168.1.10:8083/hashicorp/consul:1.16.2
+  imageK8S: 192.168.1.10:8083/hashicorp/consul-k8s-control-plane:1.2.2
+  datacenter: dc1
+  imageConsulDataplane: 192.168.1.10:8083/hashicorp/consul-dataplane:1.2.2
+apiGateway:
+  imageEnvoy: "192.168.1.10:8083/envoyproxy/envoy:v1.25.9"
+telemetryCollector:
+  image: "192.168.1.10:8083/hashicorp/consul-telemetry-collector:0.0.1"
+server:
+  replicas: 1
+  bootstrapExpect: 1
+  disruptionBudget:
+    maxUnavailable: 0
+  storage: 5Gi
+  storageClass: longhorn
+client:
+  enabled: true
+

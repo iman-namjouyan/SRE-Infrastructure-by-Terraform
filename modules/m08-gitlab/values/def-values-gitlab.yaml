@@ -1,0 +1,154 @@
+certmanager:
+  install: false
+gitlab:
+  gitaly:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitaly
+    persistence:
+      size: 10Gi
+  gitlab-exporter:
+    enabled: false
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter
+  gitlab-shell:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-shell
+    maxReplicas: 1
+    minReplicas: 1
+    service:
+      type: LoadBalancer
+  global:
+    communityImages:
+      migrations:
+        repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ce
+      sidekiq:
+        repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ce
+      toolbox:
+        repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ce
+      webservice:
+        repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ce
+      workhorse:
+        repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ce
+  kas:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-kas
+  sidekiq:
+    maxReplicas: 1
+    minReplicas: 1
+  webservice:
+    maxReplicas: 1
+    minReplicas: 1
+gitlab-runner:
+  image: 
+    registry: 192.168.1.10:8083
+    image: gitlab/gitlab-runner
+    tag: alpine-v14.7.0
+  install: true
+global:
+  appConfig:
+    # ldap:
+    #   servers:
+    #     main:
+    #       base: DC=gitlab,DC=local
+    #       bind_dn: CN=gitlab_ad,CN=Users,DC=gitlab,DC=local
+    #       encryption: plain
+    #       host: 192.168.2.131
+    #       label: LDAP
+    #       password:
+    #         key: password
+    #         secret: ldap-password-secret
+    #       port: 389
+    #       uid: sAMAccountName
+    #       user_filter: (memberof:=CN=Gitlab,CN=Users,DC=test,DC=net)
+    # omniauth:
+    #   allowSingleSignOn: true
+    #   autoLinkSamlUser: true
+    #   blockAutoCreatedUsers: false
+    #   enabled: true
+    #   providers:
+    #   - secret: gitlab-sso-oidc
+    terraformState:
+      enabled: true
+  busybox:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox
+  certificates:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/certificates
+  edition: ce
+  hosts:
+    domain: git.local
+    gitlab:
+      https: false
+    https: false
+    registry:
+      https: false
+    ssh: ssh.gitlab.git.local
+    tls:
+      enabled: false
+  ingress:
+    class: nginx
+    configureCertmanager: false
+    enabled: true
+    tls:
+      enabled: false
+  kubectl:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/kubectl
+  rails:
+    bootsnap:
+      enabled: false
+  shell:
+    port: 2222
+  # smtp:
+  #   address: smtp.gmail.com
+  #   authentication: login
+  #   domain: smtp.gmail.com
+  #   enabled: true
+  #   openssl_verify_mode: peer
+  #   password:
+  #     secret: smtp-password
+  #   port: 587
+  #   starttls_auto: true
+  #   user_name: test@gmail.com
+minio:
+  image: 192.168.1.10:8083/minio/minio
+  minioMc:
+    image: 192.168.1.10:8083/minio/mc
+nginx-ingress:
+  enabled: false
+postgresql:
+  auth:
+    usePasswordFiles: false
+  image:
+    registry: 192.168.1.10:8083
+    repository: bitnami/postgresql
+    tag: 14.8.0
+  metrics:
+    image:
+      registry: 192.168.1.10:8083
+      repository: bitnami/postgres-exporter
+      tag: 0.12.0-debian-11-r86
+prometheus:
+  install: false
+redis:
+  image:
+    registry: 192.168.1.10:8083
+    repository: bitnami/redis
+    tag: 6.2.7-debian-11-r11
+  metrics:
+    image:
+      registry: 192.168.1.10:8083
+      repository: bitnami/redis-exporter
+      tag: 1.43.0-debian-11-r4
+registry:
+  enabled: true
+  hpa:
+    maxReplicas: 1
+    minReplicas: 1
+  image:
+    repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry
+shared-secrets:
+  selfsign:
+    image:
+      repository: 192.168.1.10:8083/registry.gitlab.com/gitlab-org/build/cng/cfssl-self-sign
