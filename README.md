@@ -3,7 +3,9 @@ Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashic
 Table 
 [Specs](README.md#specs)
 
-[Specs](README.md#modules)
+[Einführung](README.md#specs)
+
+[Modules](README.md#modules)
 
 
 
