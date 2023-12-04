@@ -6,6 +6,8 @@ Table
 [Einführung](README.md#Einführung)
 
 [Modules](README.md#modules)
+- [Nginx-ingress](README.md#nginx-ingress)
+- [Nginx-ingress](README.md#nginx-ingress)
 
 
 
