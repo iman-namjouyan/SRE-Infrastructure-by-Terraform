@@ -1,7 +1,12 @@
 # Infrastructure-By-Terraform
+
 Erstellt von: *Iman Namjooyan*
+
 E.Mail: *im.namjuyan@gmail.com*
-Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK und Gitlab auf dem Kubernetes-Cluster.
+
+Datum: *Dezember 2023*
+
+Titel: Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK und Gitlab auf dem Kubernetes-Cluster.
 
 # Inhaltsverzeichnis
 
