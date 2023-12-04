@@ -6,12 +6,16 @@ Table
 [Einführung](README.md#Einführung)
 
 [Modules](README.md#modules)
-- [Nginx-ingress](README.md#nginx-ingress)
-- [Nginx-ingress](README.md#nginx-ingress)
+- [Longhorn Block Storage](README.md#longhorn-block-storage)
+- [Prometheus-stack](README.md#prometheus-stack)
+- [MinIO](README.md#minio)
+- [Velero](README.md#velero)
+- [ArgoCD](README.md#argocd)
+- [Hashicorp-vault](README.md#hashicorp-vault)
+- [Elasticsearch Fluentbit Kibana (EFK)](README.md#elasticsearch-fluentbit-kibana-efk)
+- [Gitlab](README.md#gitlab)
 
-
-
-
+----------------------
 
 Specs
 =======
@@ -298,7 +302,7 @@ Betriebsanalyse: Sie können EFK zur Analyse Ihrer Betriebsdaten verwenden. Dadu
 
 EFK ist eine leistungsstarke und flexible Lösung zum Sammeln und Analysieren von Anwendungsdaten. Sie ist eine gute Wahl für Unternehmen, die eine skalierbare, anpassbare und sichere Lösung suchen.
 
-**GitLab:**
+**Gitlab:**
 -------
 
 GitLab ist eine Open-Source-Plattform zur Quellcodeverwaltung, die Build-Management, Bug-Tracking, Release-Management, Secret-Management und Code-Analyse integriert. Sie ist für Softwareentwickler, Ingenieurteams und Unternehmen konzipiert.
