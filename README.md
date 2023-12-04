@@ -2,8 +2,12 @@
 Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK and Gitlab On Kubernetes Cluster
 Table 
 [Specs](README.md#specs)
+
 [Einführung](README.md#Einführung)
+
 [Modules](README.md#modules)
+
+
 
 
 
@@ -56,6 +60,7 @@ In diesem Projekt wird Kubernetes-Version 1.26.5 verwendet.
 Modules:
 =======
 **Nginx-ingress:**
+-------
 
 Nginx-Ingress ist ein Ingress Controller für Kubernetes, der Nginx verwendet. Ein Ingress Controller ist ein Kubernetes-Element, das externen Datenverkehr an interne Dienste in einem Kubernetes-Cluster weiterleitet. Nginx-Ingress ist einer der beliebtesten Ingress Controller und bekannt für seine Funktionen und gute Leistung.
 
