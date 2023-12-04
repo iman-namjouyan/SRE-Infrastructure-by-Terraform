@@ -1,6 +1,11 @@
 # Infrastructure-By-Terraform
 Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK and Gitlab On Kubernetes Cluster
 
+[MinIO](docs/README.md#specs)
+
+Specs
+========================
+
 **LOM:**
 Tools|Version
 -----|-------
@@ -122,7 +127,7 @@ Identifizieren von Mustern der Ressourcennutzung
 Prometheus-Stapel ist eine ausgezeichnete Wahl für Organisationen, die eine einfache, anpassbare und erweiterbare Überwachungs- und Warnlösung für ihren Kubernetes-Cluster suchen.
 
 -----------------
-**MinIO:**
+<a name="MinIO">MinIO</a>
 
 Minio ist ein Open-Source-Objektspeichersystem, das das S3-Protokoll unterstützt. Es ist schnell, zuverlässig und skalierbar. Minio kann eigenständig oder als Speicherschicht für Kubernetes verwendet werden.
 
