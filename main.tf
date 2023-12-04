@@ -1,7 +1,8 @@
 # This Config Deploying and Configuring : HELM, MinIO, Longhorn Block Storage,
 # Prometheus Stack,ArgoCD, Gitlab, EFK Stack, Velero, Hashicorp-Vault Backup Tools
-# im.namjuyan@gmail.com
-# 2023-11-14
+# Created by: Iman Namjooyan
+# E.Mail: im.namjuyan@gmail.com
+# Date: 2023-11-14
 
 terraform {
   required_version = ">= 1.0.4"
