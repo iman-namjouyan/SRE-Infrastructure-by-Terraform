@@ -219,3 +219,35 @@ Kostenlos
 Fazit:
 
 ArgoCD ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Lösung für das Anwendungslebenszyklusmanagement für ihre Kubernetes-Anwendungen suchen.
+
+
+**Hashicorp-vault**
+
+HashiCorp Vault ist ein Open-Source-Tool zur sicheren Speicherung und Verwaltung von Geheimnissen. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Geheimnisquelle verantwortlich ist.
+
+Hauptfunktionen:
+
+Sichere Geheimspeicherung: Vault verwendet starke Verschlüsselung und Authentifizierung, um Geheimnisse zu schützen.
+Identitätsbasierte Zugriffsverwaltung: Vault verwendet rollenbasierte Zugriffskontrolle (RBAC), um den Zugriff auf Geheimnisse zu steuern.
+Geheimgenerierung in Echtzeit: Vault kann Geheimnisse in Echtzeit generieren.
+Secret Lifecycle Management: Vault kann den Lebenszyklus von Secrets verwalten.
+Anwendungsbereiche:
+
+Speicherung von Passwörtern und API-Schlüsseln
+Generieren Sie zufällige Benutzernamen und Passwörter
+Erstellen Sie Token für den Zugriff auf Ressourcen
+Beispiele für die Verwendung von Vault:
+
+Speichern von Datenbankkennwörtern
+Generieren von zufälligen Benutzernamen und Passwörtern
+Generieren von Token für den Zugriff auf die API
+Vorteile der Verwendung von Vault:
+
+Starke Sicherheit: Vault verwendet starke Verschlüsselung und Authentifizierung, um Geheimnisse zu schützen.
+Verwaltbarkeit: Vault verfügt über eine Reihe von Verwaltungsfunktionen, mit denen Sie Vault einfach verwalten können.
+Skalierbarkeit: Vault kann automatisch skaliert werden, wenn die Anzahl der Benutzer und Anfragen steigt.
+Anpassbarkeit: Vault kann mithilfe von Plugins und API an Ihre spezifischen Anforderungen angepasst werden.
+Kostenlos: Vault ist ein Open-Source-Projekt, das kostenlos verfügbar ist.
+Fazit:
+
+HashiCorp Vault ist eine ausgezeichnete Wahl für Unternehmen, die eine sichere und zuverlässige Zugangs- und Geheimverwaltungslösung suchen.
