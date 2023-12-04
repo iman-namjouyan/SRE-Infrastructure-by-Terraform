@@ -29,7 +29,7 @@ hashicorp vault|
 Elasticsearch Fluentbit Kibana (EFK)|
 Gitlab|
 
-
+-----------------
 **Einführung:**
 
 In diesem Projekt wird von Terraform eine Infrastruktur geschaffen, um den CI/CD-Zyklus in Kubernetes zu nutzen. Terraform-Codes werden als separate Module geschrieben, um sie lesbar und verständlich zu machen. Diese Module befinden sich im Modulverzeichnis. Die Liste der Module ist in der Tabelle enthalten.
@@ -44,7 +44,7 @@ In einigen Modulen werden auch Ausgabevariablen verwendet. Ausgabevariablen übe
 
 In diesem Projekt wird Kubernetes-Version 1.26.5 verwendet.
 
-
+-----------------
 **Nginx-ingress:**
 
 Nginx-Ingress ist ein Ingress Controller für Kubernetes, der Nginx verwendet. Ein Ingress Controller ist ein Kubernetes-Element, das externen Datenverkehr an interne Dienste in einem Kubernetes-Cluster weiterleitet. Nginx-Ingress ist einer der beliebtesten Ingress Controller und bekannt für seine Funktionen und gute Leistung.
@@ -68,7 +68,7 @@ Bereitstellung von VoIP-Diensten
 Bereitstellung von CDN-Diensten
 Nginx-Ingress ist ein leistungsstarkes Tool, das für eine Vielzahl von Anwendungen eingesetzt werden kann.
 
-
+-----------------
 **Longhorn Block Storage**
 
 Longhorn-Blockspeicher ist ein verteiltes Blockspeichersystem für Kubernetes. Es nutzt Kubernetes und Containerelemente, um eine einfache, zuverlässige und skalierbare Speicherlösung bereitzustellen.
@@ -120,7 +120,7 @@ Fazit:
 
 Prometheus-Stapel ist eine ausgezeichnete Wahl für Organisationen, die eine einfache, anpassbare und erweiterbare Überwachungs- und Warnlösung für ihren Kubernetes-Cluster suchen.
 
-
+-----------------
 **MinIO:**
 
 Minio ist ein Open-Source-Objektspeichersystem, das das S3-Protokoll unterstützt. Es ist schnell, zuverlässig und skalierbar. Minio kann eigenständig oder als Speicherschicht für Kubernetes verwendet werden.
@@ -153,7 +153,7 @@ Fazit:
 
 Minio ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Objektspeichersystem suchen.
 
-
+-----------------
 **Velero:**
 
 Velero ist ein Open-Source-Tool, das Kubernetes-Daten sichert, wiederherstellt und migriert. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Sicherung oder Wiederherstellung verantwortlich ist.
@@ -187,7 +187,7 @@ Fazit:
 
 Velero ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Backup- und Wiederherstellungslösung für ihre Kubernetes-Daten suchen.
 
-
+-----------------
 **ArgoCD**
 
 ArgoCD ist ein Open-Source-Tool, das Kubernetes-Anwendungen aus einem Git-Repository bereitstellt, aktualisiert und wiederherstellt. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Kubernetes-Anwendung verantwortlich ist.
@@ -220,7 +220,7 @@ Fazit:
 
 ArgoCD ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Lösung für das Anwendungslebenszyklusmanagement für ihre Kubernetes-Anwendungen suchen.
 
-
+-----------------
 **Hashicorp-vault**
 
 HashiCorp Vault ist ein Open-Source-Tool zur sicheren Speicherung und Verwaltung von Geheimnissen. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Geheimnisquelle verantwortlich ist.
@@ -252,7 +252,7 @@ Fazit:
 
 HashiCorp Vault ist eine ausgezeichnete Wahl für Unternehmen, die eine sichere und zuverlässige Zugangs- und Geheimverwaltungslösung suchen.
 
-
+-----------------
 **Elasticsearch Fluentbit Kibana (EFK)**
 
 Elasticsearch Fluentbit Kibana (EFK) ist eine Open-Source-Software-Suite zum Sammeln, Speichern und Analysieren von Anwendungsdaten. Sie besteht aus drei Komponenten:
@@ -279,7 +279,7 @@ Fazit:
 
 EFK ist eine leistungsstarke und flexible Lösung zum Sammeln und Analysieren von Anwendungsdaten. Sie ist eine gute Wahl für Unternehmen, die eine skalierbare, anpassbare und sichere Lösung suchen.
 
-
+-----------------
 **GitLab:**
 
 GitLab ist eine Open-Source-Plattform zur Quellcodeverwaltung, die Build-Management, Bug-Tracking, Release-Management, Secret-Management und Code-Analyse integriert. Sie ist für Softwareentwickler, Ingenieurteams und Unternehmen konzipiert.
