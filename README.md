@@ -30,7 +30,7 @@ Elasticsearch Fluentbit Kibana (EFK)|
 Gitlab|
 
 -----------------
-**Einführung:**
+## Einführung:
 
 In diesem Projekt wird von Terraform eine Infrastruktur geschaffen, um den CI/CD-Zyklus in Kubernetes zu nutzen. Terraform-Codes werden als separate Module geschrieben, um sie lesbar und verständlich zu machen. Diese Module befinden sich im Modulverzeichnis. Die Liste der Module ist in der Tabelle enthalten.
 
@@ -45,8 +45,7 @@ In einigen Modulen werden auch Ausgabevariablen verwendet. Ausgabevariablen übe
 In diesem Projekt wird Kubernetes-Version 1.26.5 verwendet.
 
 -----------------
-**Modules:**
-
+## Modules:
 **Nginx-ingress:**
 
 Nginx-Ingress ist ein Ingress Controller für Kubernetes, der Nginx verwendet. Ein Ingress Controller ist ein Kubernetes-Element, das externen Datenverkehr an interne Dienste in einem Kubernetes-Cluster weiterleitet. Nginx-Ingress ist einer der beliebtesten Ingress Controller und bekannt für seine Funktionen und gute Leistung.
