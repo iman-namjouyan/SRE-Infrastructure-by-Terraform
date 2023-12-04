@@ -2,9 +2,7 @@
 Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK and Gitlab On Kubernetes Cluster
 Table 
 [Specs](README.md#specs)
-
-[Einführung](README.md#specs)
-
+[Einführung](README.md#Einführung)
 [Modules](README.md#modules)
 
 
