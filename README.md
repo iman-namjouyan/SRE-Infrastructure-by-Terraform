@@ -45,6 +45,8 @@ In einigen Modulen werden auch Ausgabevariablen verwendet. Ausgabevariablen übe
 In diesem Projekt wird Kubernetes-Version 1.26.5 verwendet.
 
 -----------------
+**Modules:**
+
 **Nginx-ingress:**
 
 Nginx-Ingress ist ein Ingress Controller für Kubernetes, der Nginx verwendet. Ein Ingress Controller ist ein Kubernetes-Element, das externen Datenverkehr an interne Dienste in einem Kubernetes-Cluster weiterleitet. Nginx-Ingress ist einer der beliebtesten Ingress Controller und bekannt für seine Funktionen und gute Leistung.
@@ -91,7 +93,7 @@ Sie können Longhorn-Blockspeicher verwenden, um Daten in Datenbanken zu speiche
 Sie können Longhorn-Blockspeicher zum Speichern von Mediendateien verwenden. Dadurch können Sie Ihre Mediendateien auf einem Kubernetes-Cluster hosten und die Verwaltungs- und Kollaborationsfunktionen von Kubernetes nutzen.
 Sie können Longhorn-Blockspeicher zum Speichern von Anwendungsdaten verwenden. Dadurch können Sie Ihre Anwendungsdaten in einem Kubernetes-Cluster speichern und die Skalierbarkeit und Verwaltungsfunktionen von Kubernetes nutzen.
 
-Fazit:
+*****Fazit:*****
 
 Longhorn-Blockspeicher ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Blockspeichersystem für Kubernetes suchen.
 
@@ -116,7 +118,7 @@ Erhalt von Benachrichtigungen bei Ausfällen oder schlechter Leistung von Ressou
 Überprüfen des Zustands und der Leistung von Anwendungen
 Identifizieren von Mustern der Ressourcennutzung
 
-Fazit:
+*****Fazit:*****
 
 Prometheus-Stapel ist eine ausgezeichnete Wahl für Organisationen, die eine einfache, anpassbare und erweiterbare Überwachungs- und Warnlösung für ihren Kubernetes-Cluster suchen.
 
@@ -149,7 +151,7 @@ Sicher
 Anpassbar
 Kostenlos
 
-Fazit:
+*****Fazit:*****
 
 Minio ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Objektspeichersystem suchen.
 
@@ -183,7 +185,7 @@ Sicher
 Anpassbar
 Kostenlos
 
-Fazit:
+*****Fazit:*****
 
 Velero ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Backup- und Wiederherstellungslösung für ihre Kubernetes-Daten suchen.
 
@@ -216,7 +218,7 @@ Sicher
 Anpassbar
 Kostenlos
 
-Fazit:
+*****Fazit:*****
 
 ArgoCD ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Lösung für das Anwendungslebenszyklusmanagement für ihre Kubernetes-Anwendungen suchen.
 
@@ -248,7 +250,7 @@ Verwaltbarkeit: Vault verfügt über eine Reihe von Verwaltungsfunktionen, mit d
 Skalierbarkeit: Vault kann automatisch skaliert werden, wenn die Anzahl der Benutzer und Anfragen steigt.
 Anpassbarkeit: Vault kann mithilfe von Plugins und API an Ihre spezifischen Anforderungen angepasst werden.
 Kostenlos: Vault ist ein Open-Source-Projekt, das kostenlos verfügbar ist.
-Fazit:
+*****Fazit:*****
 
 HashiCorp Vault ist eine ausgezeichnete Wahl für Unternehmen, die eine sichere und zuverlässige Zugangs- und Geheimverwaltungslösung suchen.
 
@@ -275,7 +277,7 @@ Beispiele für die Verwendung von EFK:
 Leistungsüberwachung: Sie können EFK verwenden, um die Leistung Ihrer Anwendungen zu überwachen. Dadurch können Sie die Leistung Ihrer Anwendungen verfolgen und Probleme erkennen, wenn sie auftreten.
 Sicherheitsanalyse: Sie können EFK zur Analyse Ihrer Sicherheitsdaten verwenden. Dadurch können Sie Sicherheitsangriffe erkennen und verhindern.
 Betriebsanalyse: Sie können EFK zur Analyse Ihrer Betriebsdaten verwenden. Dadurch können Sie die Leistung Ihrer Infrastruktur verfolgen und Muster erkennen.
-Fazit:
+*****Fazit:*****
 
 EFK ist eine leistungsstarke und flexible Lösung zum Sammeln und Analysieren von Anwendungsdaten. Sie ist eine gute Wahl für Unternehmen, die eine skalierbare, anpassbare und sichere Lösung suchen.
 
@@ -310,6 +312,6 @@ Kostenlos und Open Source: GitLab ist ein Open-Source-Projekt, das frei verfügb
 Skalierbarkeit: GitLab kann automatisch skaliert werden, wenn Benutzer und Projekte wachsen.
 Anpassbarkeit: GitLab kann mithilfe von Plugins und API an Ihre spezifischen Anforderungen angepasst werden.
 Sicherheit: GitLab verwendet Verschlüsselung und Authentifizierung, um Daten zu schützen.
-Fazit:
+*****Fazit:*****
 
 GitLab ist eine leistungsstarke und umfassende Plattform zur Quellcodeverwaltung, die für eine Vielzahl von Anwendungen geeignet ist.
