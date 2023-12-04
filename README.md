@@ -4,7 +4,7 @@ Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashic
 **LOM:**
 Tools|Version
 -----|-------
-Kubernetes|1.26.6
+Kubernetes|1.26.5
 Terraform|1.0.4
 Helm|3.12.3
 htpasswd|1.0.1 (loafoe/htpasswd)
