@@ -1,6 +1,8 @@
 # Infrastructure-By-Terraform
-Deploying NginxIngress, Longhorn, Prometheus-Stack,MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK and Gitlab On Kubernetes Cluster
-Table 
+Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK und Gitlab auf dem Kubernetes-Cluster.
+
+**Inhaltsverzeichnis**
+
 [Specs](README.md#specs)
 
 [Einführung](README.md#Einführung)
