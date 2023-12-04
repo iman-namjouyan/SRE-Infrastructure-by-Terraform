@@ -68,6 +68,7 @@ Bereitstellung von VoIP-Diensten
 Bereitstellung von CDN-Diensten
 Nginx-Ingress ist ein leistungsstarkes Tool, das für eine Vielzahl von Anwendungen eingesetzt werden kann.
 
+
 **Longhorn Block Storage**
 
 Longhorn-Blockspeicher ist ein verteiltes Blockspeichersystem für Kubernetes. Es nutzt Kubernetes und Containerelemente, um eine einfache, zuverlässige und skalierbare Speicherlösung bereitzustellen.
@@ -94,6 +95,7 @@ Fazit:
 
 Longhorn-Blockspeicher ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Blockspeichersystem für Kubernetes suchen.
 
+
 **Prometheus-stack:**
 
 Prometheus-Stapel ist ein Helm-Paket, das eine Sammlung von Überwachungs- und Warntools für Kubernetes-Cluster bereitstellt. Dazu gehören Prometheus, Grafana und Alertmanager.
@@ -117,6 +119,7 @@ Identifizieren von Mustern der Ressourcennutzung
 Fazit:
 
 Prometheus-Stapel ist eine ausgezeichnete Wahl für Organisationen, die eine einfache, anpassbare und erweiterbare Überwachungs- und Warnlösung für ihren Kubernetes-Cluster suchen.
+
 
 **MinIO:**
 
@@ -150,3 +153,69 @@ Fazit:
 
 Minio ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Objektspeichersystem suchen.
 
+
+**Velero:**
+
+Velero ist ein Open-Source-Tool, das Kubernetes-Daten sichert, wiederherstellt und migriert. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Sicherung oder Wiederherstellung verantwortlich ist.
+
+Hauptfunktionen:
+
+Vollständige oder selektive Sicherungen: Velero kann vollständige oder selektive Sicherungen von Kubernetes-Daten durchführen.
+Redundante Sicherungen: Velero kann redundante Datensicherungen durchführen, sodass frühere Datenversionen wiederhergestellt werden können.
+Wiederherstellung in einem neuen Cluster: Velero kann Daten in einem neuen Kubernetes-Cluster wiederherstellen.
+Daten zwischen Clustern übertragen: Velero kann Daten zwischen Kubernetes-Clustern übertragen.
+Anwendungsbereiche:
+
+Tägliche oder wöchentliche Sicherungen von Kubernetes-Daten
+Datenwiederherstellung bei Datenausfall oder -verlust
+Daten in einen neuen Kubernetes-Cluster migrieren
+Beispiele für die Verwendung von Velero:
+
+Datensicherung von Datenbanken
+Datenwiederherstellung von Anwendungen
+Datenmigration in einen neuen Kubernetes-Cluster
+Vorteile der Verwendung von Velero:
+
+Einfach und leicht zu bedienen
+Zuverlässig
+Skalierbar
+Sicher
+Anpassbar
+Kostenlos
+
+Fazit:
+
+Velero ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Backup- und Wiederherstellungslösung für ihre Kubernetes-Daten suchen.
+
+
+**ArgoCD**
+
+ArgoCD ist ein Open-Source-Tool, das Kubernetes-Anwendungen aus einem Git-Repository bereitstellt, aktualisiert und wiederherstellt. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Kubernetes-Anwendung verantwortlich ist.
+
+Hauptfunktionen:
+
+Automatische Anwendungsbereitstellung: ArgoCD kann Kubernetes-Anwendungen automatisch aus einem Git-Repository bereitstellen.
+Automatische Anwendungsaktualisierungen: ArgoCD kann Kubernetes-Anwendungen automatisch auf neuere Versionen aktualisieren.
+Automatische Wiederherstellung von Anwendungen: ArgoCD kann Kubernetes-Anwendungen im Fehlerfall wiederherstellen.
+Anwendungsbereiche:
+
+Bereitstellung neuer Anwendungen
+Vorhandene Anwendungen aktualisieren
+Wiederherstellung von Anwendungen nach einem Fehler
+Beispiele für die Verwendung von ArgoCD:
+
+Bereitstellung neuer Anwendungen aus einem Git-Repository
+Aktualisierung vorhandener Anwendungen auf neuere Versionen
+Wiederherstellung von Anwendungen nach Abstürzen
+Vorteile der Verwendung von ArgoCD:
+
+Einfach und benutzerfreundlich
+Zuverlässig
+Skalierbar
+Sicher
+Anpassbar
+Kostenlos
+
+Fazit:
+
+ArgoCD ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Lösung für das Anwendungslebenszyklusmanagement für ihre Kubernetes-Anwendungen suchen.
