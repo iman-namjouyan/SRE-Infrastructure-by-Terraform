@@ -83,8 +83,8 @@ Bereitstellung von VoIP-Diensten
 Bereitstellung von CDN-Diensten
 Nginx-Ingress ist ein leistungsstarkes Tool, das für eine Vielzahl von Anwendungen eingesetzt werden kann.
 
------------------
 **Longhorn Block Storage**
+-------
 
 Longhorn-Blockspeicher ist ein verteiltes Blockspeichersystem für Kubernetes. Es nutzt Kubernetes und Containerelemente, um eine einfache, zuverlässige und skalierbare Speicherlösung bereitzustellen.
 
@@ -112,6 +112,7 @@ Longhorn-Blockspeicher ist eine ausgezeichnete Wahl für Unternehmen, die ein ei
 
 
 **Prometheus-stack:**
+-------
 
 Prometheus-Stapel ist ein Helm-Paket, das eine Sammlung von Überwachungs- und Warntools für Kubernetes-Cluster bereitstellt. Dazu gehören Prometheus, Grafana und Alertmanager.
 
@@ -135,8 +136,9 @@ Identifizieren von Mustern der Ressourcennutzung
 
 Prometheus-Stapel ist eine ausgezeichnete Wahl für Organisationen, die eine einfache, anpassbare und erweiterbare Überwachungs- und Warnlösung für ihren Kubernetes-Cluster suchen.
 
------------------
-<a name="MinIO">MinIO</a>
+
+**MinIO**
+-------
 
 Minio ist ein Open-Source-Objektspeichersystem, das das S3-Protokoll unterstützt. Es ist schnell, zuverlässig und skalierbar. Minio kann eigenständig oder als Speicherschicht für Kubernetes verwendet werden.
 
@@ -168,8 +170,8 @@ Kostenlos
 
 Minio ist eine ausgezeichnete Wahl für Unternehmen, die ein einfaches, zuverlässiges und skalierbares Objektspeichersystem suchen.
 
------------------
 **Velero:**
+-------
 
 Velero ist ein Open-Source-Tool, das Kubernetes-Daten sichert, wiederherstellt und migriert. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Sicherung oder Wiederherstellung verantwortlich ist.
 
@@ -202,8 +204,8 @@ Kostenlos
 
 Velero ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Backup- und Wiederherstellungslösung für ihre Kubernetes-Daten suchen.
 
------------------
 **ArgoCD**
+-------
 
 ArgoCD ist ein Open-Source-Tool, das Kubernetes-Anwendungen aus einem Git-Repository bereitstellt, aktualisiert und wiederherstellt. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Kubernetes-Anwendung verantwortlich ist.
 
@@ -235,8 +237,8 @@ Kostenlos
 
 ArgoCD ist eine ausgezeichnete Wahl für Unternehmen, die eine einfache, zuverlässige und skalierbare Lösung für das Anwendungslebenszyklusmanagement für ihre Kubernetes-Anwendungen suchen.
 
------------------
 **Hashicorp-vault**
+-------
 
 HashiCorp Vault ist ein Open-Source-Tool zur sicheren Speicherung und Verwaltung von Geheimnissen. Es verwendet ein Controller-basiertes Modell, bei dem jeder Controller für eine Geheimnisquelle verantwortlich ist.
 
@@ -267,8 +269,8 @@ Kostenlos: Vault ist ein Open-Source-Projekt, das kostenlos verfügbar ist.
 
 HashiCorp Vault ist eine ausgezeichnete Wahl für Unternehmen, die eine sichere und zuverlässige Zugangs- und Geheimverwaltungslösung suchen.
 
------------------
 **Elasticsearch Fluentbit Kibana (EFK)**
+-------
 
 Elasticsearch Fluentbit Kibana (EFK) ist eine Open-Source-Software-Suite zum Sammeln, Speichern und Analysieren von Anwendungsdaten. Sie besteht aus drei Komponenten:
 
@@ -294,8 +296,8 @@ Betriebsanalyse: Sie können EFK zur Analyse Ihrer Betriebsdaten verwenden. Dadu
 
 EFK ist eine leistungsstarke und flexible Lösung zum Sammeln und Analysieren von Anwendungsdaten. Sie ist eine gute Wahl für Unternehmen, die eine skalierbare, anpassbare und sichere Lösung suchen.
 
------------------
 **GitLab:**
+-------
 
 GitLab ist eine Open-Source-Plattform zur Quellcodeverwaltung, die Build-Management, Bug-Tracking, Release-Management, Secret-Management und Code-Analyse integriert. Sie ist für Softwareentwickler, Ingenieurteams und Unternehmen konzipiert.
 
