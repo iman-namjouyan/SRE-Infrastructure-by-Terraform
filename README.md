@@ -4,9 +4,9 @@ Erstellt von: *Iman Namjooyan*
 
 E.Mail: *im.namjuyan@gmail.com*
 
-Datum: *Dezember 2023*
+Datum: *März 2024*
 
-Titel: Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK und Gitlab auf dem Kubernetes-Cluster.
+Titel: Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK , Metallbund Gitlab auf dem Kubernetes-Cluster.
 
 # Inhaltsverzeichnis
 
