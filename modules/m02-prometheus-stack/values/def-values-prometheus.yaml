@@ -51,12 +51,12 @@ alertmanager:
     receivers:
     - name: 'email-alert'
       email_configs:
-      - to: myemail@testmail.com
-        from: sendalert@testmail.com
-        smarthost: mail.testmail:25
-        auth_username: sendalert@testmail.com
-        auth_identity: sendalert@testmail.com
-        auth_password: sendalertPassword
+      - to: i-namjooyan@agri-bank.com
+        from: linuxalert@agri-bank.com
+        smarthost: mail.agri-bank.com:25
+        auth_username: linuxalert@agri-bank.com
+        auth_identity: linuxalert@agri-bank.com
+        auth_password: lI_68ale
         require_tls: false
         send_resolved: true
 #==============================[Prometheus Operator]

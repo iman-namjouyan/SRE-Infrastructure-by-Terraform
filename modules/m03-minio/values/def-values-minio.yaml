@@ -16,7 +16,7 @@ global:
 ingress:
   enabled: true
   ingressClassName: "nginx"
-  hostname: minio.local
+  hostname: miniouat.local
   path: /
   pathType: ImplementationSpecific
   servicePort: minio-console

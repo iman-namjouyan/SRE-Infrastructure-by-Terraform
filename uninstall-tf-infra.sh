@@ -49,5 +49,12 @@ sleep 3
 kubectl delete sc longhorn
 
 echo "=========Uninstalling Nginx Ingress=========="
-helm uninstall longhorn -n ingress nginx-ingress
+helm uninstall -n ingress nginx-ingress
 kubectl delete ns ingress
+
+echo "=========Uninstalling Metallb=========="
+helm uninstall -n metallb-system metallb
+kubectl delete ns metallb-system
+
+sleep 3s
+terraform destroy -auto-approve

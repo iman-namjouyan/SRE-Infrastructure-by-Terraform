@@ -5,5 +5,5 @@ variable "velero_aws_secret_key" {
 
 variable "velero_aws_access_key" {
 	type = string
-        default = "12345678"
+        default = "Velero@adm1475963$"
 }

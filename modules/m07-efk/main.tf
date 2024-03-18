@@ -49,7 +49,7 @@ resource "helm_release" "kibana" {
   chart            = "${path.module}/charts/kibana-7.17.3.tgz"
   timeout          = 720
   values = [
-    file("${path.module}/values/deb-values-kibana.yaml"),
+    file("${path.module}/values/def-values-kibana.yaml"),
   ]
 }
 
@@ -69,3 +69,30 @@ resource "helm_release" "fluentbit" {
     file("${path.module}/values/def-values-fluentbit.yaml"),
   ]
 }
+#========================================[ Create Kibana Ingress ]
+resource "kubernetes_ingress_v1" "kibana" {
+  metadata {
+    name = "kibana"
+    namespace = "kube-logging"
+  }
+  spec {
+    ingress_class_name = "nginx"
+    rule {
+      host = "kibanauat.local"
+      http {
+        path {
+          path = "/"
+          backend {
+            service {
+              name = "kibana-kibana"
+              port {
+                number = 5601
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

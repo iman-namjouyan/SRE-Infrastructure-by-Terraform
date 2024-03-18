@@ -2,7 +2,7 @@ terraform {
 required_providers {
     htpasswd = {
       source = "loafoe/htpasswd"
-      version = "1.0.1"
+      version = "1.0.4"
     }
   }
 }
@@ -17,8 +17,8 @@ resource "helm_release" "longhorn" {
   name             = "longhorn"
   namespace        = "longhorn-system"
   create_namespace = "true"
-  chart            = "${path.module}/charts/longhorn-1.5.1.tgz"
-  version          = "1.5.1"
+  chart            = "${path.module}/charts/longhorn-1.6.0.tgz"
+  version          = "1.6.0"
   timeout          = 800
   values = [
 		"${file("${path.module}/values/def-values-longhorn.yml")}"
@@ -31,14 +31,23 @@ resource "random_password" "basic_auth_password" {
   override_special = "_@"
 }
 
+resource "random_password" "salt" {
+  length = 8
+}
+
+resource "htpasswd_password" "hash" {
+  password = random_password.basic_auth_password.result
+  salt     = substr(sha512(random_password.basic_auth_password.result), 0, 8)
+}
+
+
 resource "kubernetes_secret_v1" "longhorn-ui-auth" {
   metadata {
     name      = "basic-auth"
     namespace = "longhorn-system"
   }
   data = {
-#    auth = "admin:${htpasswd_password.longhorn-password.bcrypt}"
-    "auth" : "admin:${random_password.basic_auth_password.result}"
+    "auth" : "admin:${htpasswd_password.hash.bcrypt}"
   }
 }
 
@@ -59,20 +68,20 @@ resource "kubernetes_ingress_v1" "longhorn" {
   spec {
     ingress_class_name = "nginx"
     rule {
-			host = "longhorn.local"
-      http {
-        path {
-          path = "/"
-          backend {
-			service {
-              name = "longhorn-frontend"
-				port {
-				  number = 80
-				   	 }
-					}
-                  }
-             }
+    host = "longhornuat.local"
+    http {
+       path {
+         path = "/"
+         backend {
+           service {
+           name = "longhorn-frontend"
+	   port {
+	   number = 80
+	     }
+	    }
            }
+          }
          }
+        }
        }
-}
+      }

@@ -59,7 +59,7 @@ global:
     #         secret: ldap-password-secret
     #       port: 389
     #       uid: sAMAccountName
-    #       user_filter: (memberof:=CN=Gitlab,CN=Users,DC=test,DC=net)
+    #       user_filter: (memberof:=CN=Gitlab,CN=Users,DC=htsc,DC=ir)
     # omniauth:
     #   allowSingleSignOn: true
     #   autoLinkSamlUser: true
@@ -110,7 +110,7 @@ global:
   #     secret: smtp-password
   #   port: 587
   #   starttls_auto: true
-  #   user_name: test@gmail.com
+  #   user_name: htsc@gmail.com
 minio:
   image: 192.168.1.10:8083/minio/minio
   minioMc:

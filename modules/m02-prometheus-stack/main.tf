@@ -39,3 +39,30 @@ resource "helm_release" "prometheus-stack" {
     value = random_password.grafana_admin_dashboard_password.result
   }
 }
+
+#==========================================[Create Grafana Ingress]
+resource "kubernetes_ingress_v1" "grafana" {
+  metadata {
+    name = "grafana"
+    namespace = "monitoring"
+  }
+  spec {
+    ingress_class_name = "nginx"
+    rule {
+      host = "grafanauat.local"
+      http {
+        path {
+          path = "/"
+          backend {
+            service {
+              name = "monitoring-grafana"
+              port {
+                number = 80
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
