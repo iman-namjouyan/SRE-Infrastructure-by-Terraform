@@ -6,7 +6,7 @@ E.Mail: *im.namjuyan@gmail.com*
 
 Datum: *März 2024*
 
-Titel: Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK , Metallbund Gitlab auf dem Kubernetes-Cluster.
+Titel: Bereitstellung von NginxIngress, Longhorn, Prometheus-Stack, MinIO, Velero, ArgoCD, Hashicorp-Vault, EFK , Metallb und Gitlab auf dem Kubernetes-Cluster.
 
 # Inhaltsverzeichnis
 
